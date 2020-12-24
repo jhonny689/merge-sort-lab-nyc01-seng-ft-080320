@@ -1,6 +1,6 @@
 //1. find and remove smallest element
 
-function findAndRemoveSmallestElement(array){
+function findMinAndRemoveSorted(array){
   let min = array[0],
       minIndex = 0;
   for(let i = 1; i < array.length; i++ ){
