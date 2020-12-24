@@ -15,7 +15,7 @@ function findMinAndRemoveSorted(array){
 
 //2. merge two sorted arrays
 function merge(arr1, arr2){
-  console.log('merge', arr1, arr2)
+  // console.log('merge', arr1, arr2)
   let i = 0,
       j = 0,
       k = 0;
