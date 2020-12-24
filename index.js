@@ -27,4 +27,5 @@ function merge(arr1, arr2){
     }
   }
   console.log(i, arr1.length, j , arr2.length, k);
+  return sol;
 }
