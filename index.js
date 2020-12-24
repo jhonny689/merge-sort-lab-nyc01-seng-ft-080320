@@ -34,3 +34,12 @@ function merge(arr1, arr2){
   }
   return sol;
 }
+
+//3. merge sort algo
+function mergeSort(arr){
+  if(arr.length < 2)
+    return arr[0];
+  else{
+    let mid = arr.length/2
+  }
+}
