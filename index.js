@@ -44,7 +44,7 @@ function merge(arr1, arr2){
 function mergeSort(arr){
   console.log(arr);
   if(arr.length < 2)
-    return arr[0];
+    return arr;
   else{
     let mid = arr.length/2;
     let midLeft = arr.slice(0, mid);
