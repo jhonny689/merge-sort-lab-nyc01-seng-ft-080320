@@ -44,6 +44,8 @@ function mergeSort(arr){
     let midLeft = arr.slice(0, mid);
     let midRight = arr.slice(mid, arr.length)
     
+    console.log(midLeft, midRight);
+    
     return merge(mergeSort(midLeft), mergeSort(midRight));
   }
 }
