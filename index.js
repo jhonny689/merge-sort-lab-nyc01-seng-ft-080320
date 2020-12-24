@@ -20,10 +20,13 @@ function merge(arr1, arr2){
       j = 0,
       k = 0;
   const sol = [];
-  while(i < arr1.length && j < arr2.length){
+  while(i <= arr1.length && j <= arr2.length){
+    console.log('in first while')
     if( arr1[i] < arr2[j] ){
+      console.log('arr1[0] is smaller')
       sol[k++] = arr1[i++];
     }else{
+      console.log('arr2[0] is smaller')
       sol[k++] = arr2[j++];
     }
   }
