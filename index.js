@@ -40,6 +40,10 @@ function mergeSort(arr){
   if(arr.length < 2)
     return arr[0];
   else{
-    let mid = arr.length/2
+    let mid = arr.length/2;
+    let midLeft = arr.slice(0, mid);
+    let midRight = arr.slice(mid, arr.length)
+    
+    return merge(mergeSort(midLeft), mergeSort(midRight));
   }
 }
