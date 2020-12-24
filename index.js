@@ -37,6 +37,7 @@ function merge(arr1, arr2){
 
 //3. merge sort algo
 function mergeSort(arr){
+  console.log(arr);
   if(arr.length < 2)
     return arr[0];
   else{
