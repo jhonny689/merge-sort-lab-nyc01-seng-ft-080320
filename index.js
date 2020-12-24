@@ -33,6 +33,7 @@ function merge(arr1, arr2){
   while(j < arr2.length){
     sol[k++] = arr2[j++];
   }
+  console.log('mergeSolution', sol);
   return sol;
 }
 
