@@ -21,12 +21,12 @@ function merge(arr1, arr2){
       k = 0;
   const sol = [];
   while(i < arr1.length && j < arr2.length){
-    console.log('in first while')
+    // console.log('in first while')
     if( arr1[i] < arr2[j] ){
-      console.log(arr1[i],'is smaller');
+      // console.log(arr1[i],'is smaller');
       sol[k++] = arr1[i++];
     }else{
-      console.log(arr2[i],'is smaller');
+      // console.log(arr2[i],'is smaller');
       sol[k++] = arr2[j++];
     }
   }
@@ -36,7 +36,7 @@ function merge(arr1, arr2){
   while(j < arr2.length){
     sol[k++] = arr2[j++];
   }
-  console.log('merge Solution', sol);
+  // console.log('merge Solution', sol);
   return sol;
 }
 
@@ -50,7 +50,7 @@ function mergeSort(arr){
     let midLeft = arr.slice(0, mid);
     let midRight = arr.slice(mid, arr.length)
     
-    console.log(midLeft, midRight);
+    // console.log(midLeft, midRight);
     
     return merge(mergeSort(midLeft), mergeSort(midRight));
   }
