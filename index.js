@@ -26,6 +26,11 @@ function merge(arr1, arr2){
       sol[k++] = arr2[j++];
     }
   }
-  console.log(i, arr1.length, j , arr2.length, k);
+  while(i < arr1.length){
+    sol[k++] = arr1[i++];
+  }
+  while(j < arr2.length){
+    sol[k++] = arr2[j++];
+  }
   return sol;
 }
