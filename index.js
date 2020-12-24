@@ -23,10 +23,10 @@ function merge(arr1, arr2){
   while(i <= arr1.length && j <= arr2.length){
     console.log('in first while')
     if( arr1[i] < arr2[j] ){
-      console.log('arr1[0] is smaller')
+      console.log(arr1[i],'is smaller');
       sol[k++] = arr1[i++];
     }else{
-      console.log('arr2[0] is smaller')
+      console.log(arr2[i],'is smaller');
       sol[k++] = arr2[j++];
     }
   }
@@ -36,7 +36,7 @@ function merge(arr1, arr2){
   while(j < arr2.length){
     sol[k++] = arr2[j++];
   }
-  console.log('mergeSolution', sol);
+  console.log('merge Solution', sol);
   return sol;
 }
 
